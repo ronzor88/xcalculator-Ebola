@@ -60,12 +60,29 @@ if operation == 5:
     inputLista = []
     inputting = True
     while inputting:
-        inputtal = input("Lägg till ett tal, X när du är klar: ")
+        inputtal = raw_input("Lägg till ett tal, X när du är klar: ")
         if inputtal == "x" or inputtal == "X":
             inputting = False
             continue
-        inputLista.extend([inputtal])
+        inputLista.append(int(inputtal))
+        print "Just nu har du: "
+        print inputLista
+    
     print medeltal(inputLista)
+if operation == 6:
+    inputLista = []
+    inputting = True
+    while inputting:
+        inputtal = raw_input("Lägg till ett tal, X när du är klar: ")
+        if inputtal == "x" or inputtal == "X":
+            inputting = False
+            continue
+        inputLista.append(int(inputtal))
+        print "Just nu har du: "
+        print inputLista
+    
+    print median(inputLista)
+
         
 
     
