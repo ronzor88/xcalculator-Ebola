@@ -36,3 +36,37 @@ def summa (a):
 
 def upp (a,b):
     return a**b
+print "Välj vilken funktion du vill använda:"
+print "\n (1) Plus \n (2) Minus \n (3) Multiplicera \n (4) Dividera"
+print "\n (5) Medeltal \n (6) Median \n (7) Summa flera tal \n (8) Upphöjning"
+operation = input("Välj funktion (1-8): ")
+if operation == 1:
+    a = input("Tal 1: ")
+    b = input("Tal 2: ")
+    print plus(a, b)
+if operation == 2:
+    a = input("Tal 1: ")
+    b = input("Tal 2: ")
+    print minus (a, b)
+if operation == 3:
+    a = input("Tal 1: ")
+    b = input("Tal 2: ")
+    print multi(a, b)
+if operation == 4:
+    a = input("Tal 1: ")
+    b = input("Tal 2: ")
+    print div(a, b)
+if operation == 5:
+    inputLista = []
+    inputting = True
+    while inputting:
+        inputtal = input("Lägg till ett tal, X när du är klar: ")
+        if inputtal == "x" or inputtal == "X":
+            inputting = False
+            continue
+        inputLista.extend([inputtal])
+    print medeltal(inputLista)
+        
+
+    
+
