@@ -9,6 +9,9 @@ while running:
     def multi (a, b):
         return a*b
     def div (a, b):
+        if a==0 or b==0:
+            print "Input invalid!"
+            return 0
         return a/b
 
 
