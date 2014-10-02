@@ -2,7 +2,6 @@
 print "Välkommen till vår grymma kalkylator!"
 running = True
 while running:
-    
     def plus (a, b):
         return a+b
     def minus (a, b):
@@ -14,10 +13,9 @@ while running:
             print "Input invalid!"
             return 0
         return a/b
-
     def medeltal (a):
-        sum = sum(a)
-        return div(sum, len(a))
+        summa = sum(a)
+        return div(summa, len(a))
     def median(lst):
         sortedLst = sorted(lst)
         lstLen = len(lst)
@@ -27,8 +25,8 @@ while running:
         else:
             return (sortedLst[index] + sortedLst[index + 1])/2.0
     def summa (a):
-        sum = sum(a)
-        return sum
+        summa = sum(a)
+        return summa
     def upp (a,b):
         return a**b
 
